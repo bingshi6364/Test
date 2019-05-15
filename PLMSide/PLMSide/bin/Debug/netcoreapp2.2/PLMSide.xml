@@ -1,0 +1,620 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PLMSide</name>
+    </assembly>
+    <members>
+        <member name="M:PLMSide.Controllers.ApprovalProcessController.GetEntities(System.String,System.Int32)">
+            <summary>
+            获取所有实体（可通过Account Sales进行模糊查询）
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PLMSide.Controllers.ApprovalProcessController.GetSingleEntity(System.Int32)">
+            <summary>
+            通过Id获取单个实体
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PLMSide.Controllers.ApprovalProcessController.PostEntity(PLMSide.Data.Entities.ApprovalProcess)">
+            <summary>
+            新增实体
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PLMSide.Controllers.ApprovalProcessController.PutEntity(PLMSide.Data.Entities.ApprovalProcess)">
+            <summary>
+            修改实体
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PLMSide.Controllers.ApprovalProcessController.DeleteEntity(System.Int32)">
+            <summary>
+            删除实体
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PLMSide.Controllers.ApprovalProcessController.GetAccountSalesByRole">
+            <summary>
+            获取所有AccountSales角色的所有用户
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PLMSide.Controllers.ApprovalProcessController.GetASMByRole">
+            <summary>
+            获取所有ASM角色的所有用户
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PLMSide.Controllers.AuthController.SHA1(System.String,System.String,System.Text.Encoding)">
+            <summary>
+            SHA1 加密，返回大写字符串
+            </summary>
+            <param name="content">需要加密字符串</param>
+            <param name="shacontent">加密后的编码</param>
+            <param name="encode">指定加密编码</param>
+            <returns>返回40位大写字符串</returns>
+        </member>
+        <member name="M:PLMSide.Controllers.BuyWindowController.GetModel(System.Int32)">
+            <summary>
+            获取所有xiang
+            </summary>
+            <returns></returns>
+            
+        </member>
+        <member name="M:PLMSide.Controllers.BuyWindowController.GetSeasonListByYear(System.String)">
+            <summary>
+            查询未添加的季度
+            </summary>
+            <param name="Year"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PLMSide.Controllers.BuyWindowController.GetSIDE_PLM_BLR_BuyWindowListByState(System.Int32)">
+            <summary>
+            查询不同状态的buywindowslist
+            </summary>
+            <param name="State"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PLMSide.Controllers.BuyWindowController.GetPageListByState(System.Int32,System.Int32)">
+            <summary>
+            Get entities
+            </summary>
+            <returns></returns>
+                   
+        </member>
+        <member name="M:PLMSide.Controllers.BuyWindowController.Post(PLMSide.Data.Entites.SIDE_PLM_BLR_BuyWindow)">
+            <summary>
+            添加买货信息接口
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PLMSide.Controllers.CustomersInfoController.#ctor(PLMSide.Data.IRepository.ICustomersInfoRepository)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="_repository"></param>
+        </member>
+        <member name="M:PLMSide.Controllers.CustomersInfoController.GetEntities(System.String,System.String,System.String,System.Int32)">
+            <summary>
+            Get entities
+            </summary>
+            <returns></returns>
+            
+        </member>
+        <member name="M:PLMSide.Controllers.CustomersInfoController.GetSingleEntity(System.Int32)">
+            <summary>
+            get single entity
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PLMSide.Controllers.CustomersInfoController.PostEntity(PLMSide.Data.Entites.CustomersInfo)">
+            <summary>
+            Post Entity
+            </summary>
+            <returns></returns>
+            
+        </member>
+        <member name="M:PLMSide.Controllers.CustomersInfoController.PutEntity(PLMSide.Data.Entites.CustomersInfo)">
+            <summary>
+            Put Entity
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PLMSide.Controllers.CustomersInfoController.DeleteEntity(System.Int32)">
+            <summary>
+            Delete Entity
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PLMSide.Controllers.MasterdataController.GetBig_Formats">
+            <summary>
+            获取SIDE_MD_Big_Format
+            </summary>
+            <returns></returns>
+            
+        </member>
+        <member name="M:PLMSide.Controllers.MasterdataController.GetMD_Buying_Region">
+            <summary>
+            获取GetMD_Buying_Region
+            </summary>
+            <returns></returns>
+            
+        </member>
+        <member name="M:PLMSide.Controllers.MasterdataController.GetMD_Grading">
+            <summary>
+            获取Grading
+            </summary>
+            <returns></returns>
+            
+        </member>
+        <member name="M:PLMSide.Controllers.MasterdataController.GetMD_POS_Channel">
+            <summary>
+            获取GetMD_POS_Channel
+            </summary>
+            <returns></returns>
+            
+        </member>
+        <member name="M:PLMSide.Controllers.MasterdataController.GetMD_POS_Type">
+            <summary>
+            获取GetMD_POS_Type
+            </summary>
+            <returns></returns>
+            
+        </member>
+        <member name="M:PLMSide.Controllers.MasterdataController.GetMD_Segmentation">
+            <summary>
+            获取GetMD_Segmentation
+            </summary>
+            <returns></returns>
+            
+        </member>
+        <member name="M:PLMSide.Controllers.MasterdataController.GetMD_SubChannel">
+            <summary>
+            获取GetMD_Segmentation
+            </summary>
+            <returns></returns>
+            
+        </member>
+        <member name="M:PLMSide.Controllers.POS_MasterController.#ctor(PLMSide.Data.IRepository.IPOS_MasterRepository)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="_repository"></param>
+        </member>
+        <member name="M:PLMSide.Controllers.POS_MasterController.GetListByUser(System.Int32,System.String,System.String)">
+            <summary>
+            获取 Overview
+            </summary>
+            <returns></returns>
+                   
+        </member>
+        <member name="M:PLMSide.Controllers.POS_MasterController.GetSingleEntity(System.String,System.String,System.String)">
+            <summary>
+            Get Single Entity
+            </summary>
+            <param name="TM_YEAR"></param>
+            <param name="TM_SEASON"></param>
+            <param name="POS_CODE"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PLMSide.Controllers.POS_MasterController.PostEntity(PLMSide.Data.Entites.POS_Master)">
+            <summary>
+            Post Entity
+            </summary>
+            <returns></returns>
+            
+        </member>
+        <member name="M:PLMSide.Controllers.POS_MasterController.PutEntity(PLMSide.Data.Entites.POS_Master)">
+            <summary>
+            Put Entity
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PLMSide.Controllers.POS_MasterController.DeleteEntity(System.Int32)">
+            <summary>
+            Delete Entity
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PLMSide.Controllers.RoleController.GetRoles">
+            <summary>
+            获取所有用户
+            </summary>
+            <returns></returns>
+            
+        </member>
+        <member name="M:PLMSide.Controllers.RoleController.GetRoles(System.Int32)">
+            <summary>
+            获取所有用户
+            </summary>
+            <returns></returns>
+            
+        </member>
+        <member name="M:PLMSide.Controllers.RoleController.GetRoles(System.String)">
+            <summary>
+            获取所有用户
+            </summary>
+            <returns></returns>
+            
+        </member>
+        <member name="M:PLMSide.Filter.GlobalExceptionsFilter.WriteLog(System.String,System.Exception)">
+            <summary>
+            自定义返回格式
+            </summary>
+            <param name="throwMsg"></param>
+            <param name="ex"></param>
+            <returns></returns>
+        </member>
+        <member name="P:PLMSide.Filter.JsonErrorResponse.Message">
+            <summary>
+            生产环境的消息
+            </summary>
+        </member>
+        <member name="P:PLMSide.Filter.JsonErrorResponse.DevelopmentMessage">
+            <summary>
+            开发环境的消息
+            </summary>
+        </member>
+        <member name="T:PLMSide.Log.ILoggerHelper">
+            <summary>
+            日志接口
+            </summary>
+        </member>
+        <member name="M:PLMSide.Log.ILoggerHelper.Debug(System.Object,System.String)">
+            <summary>
+            调试信息
+            </summary>
+            <param name="source">source</param>
+            <param name="message">message</param>
+        </member>
+        <member name="M:PLMSide.Log.ILoggerHelper.Debug(System.Object,System.String,System.Object[])">
+            <summary>
+            调试信息
+            </summary>
+            <param name="source">source</param>
+            <param name="message">message</param>
+            <param name="ps">ps</param>
+        </member>
+        <member name="M:PLMSide.Log.ILoggerHelper.Debug(System.Type,System.String)">
+            <summary>
+            调试信息
+            </summary>
+            <param name="source">source</param>
+            <param name="message">message</param>
+        </member>
+        <member name="M:PLMSide.Log.ILoggerHelper.Info(System.Object,System.Object)">
+            <summary>
+            关键信息
+            </summary>
+            <param name="source">source</param>
+            <param name="message">message</param>
+        </member>
+        <member name="M:PLMSide.Log.ILoggerHelper.Info(System.Type,System.Object)">
+            <summary>
+            关键信息
+            </summary>
+            <param name="source">source</param>
+            <param name="message">message</param>
+        </member>
+        <member name="M:PLMSide.Log.ILoggerHelper.Warn(System.Object,System.Object)">
+            <summary>
+            警告信息
+            </summary>
+            <param name="source">source</param>
+            <param name="message">message</param>
+        </member>
+        <member name="M:PLMSide.Log.ILoggerHelper.Warn(System.Type,System.Object)">
+            <summary>
+            警告信息
+            </summary>
+            <param name="source">source</param>
+            <param name="message">message</param>
+        </member>
+        <member name="M:PLMSide.Log.ILoggerHelper.Error(System.Object,System.Object)">
+            <summary>
+            错误信息
+            </summary>
+            <param name="source">source</param>
+            <param name="message">message</param>
+        </member>
+        <member name="M:PLMSide.Log.ILoggerHelper.Error(System.Type,System.Object)">
+            <summary>
+            错误信息
+            </summary>
+            <param name="source">source</param>
+            <param name="message">message</param>
+        </member>
+        <member name="M:PLMSide.Log.ILoggerHelper.Fatal(System.Object,System.Object)">
+            <summary>
+            失败信息
+            </summary>
+            <param name="source">source</param>
+            <param name="message">message</param>
+        </member>
+        <member name="M:PLMSide.Log.ILoggerHelper.Fatal(System.Type,System.Object)">
+            <summary>
+            失败信息
+            </summary>
+            <param name="source">source</param>
+            <param name="message">message</param>
+        </member>
+        <member name="M:PLMSide.Log.ILoggerHelper.Debug(System.Object,System.Object,System.Exception)">
+            <summary>
+            调试信息
+            </summary>
+            <param name="source">source</param>
+            <param name="message">message</param>
+            <param name="exception">ex</param>
+        </member>
+        <member name="M:PLMSide.Log.ILoggerHelper.Debug(System.Type,System.Object,System.Exception)">
+            <summary>
+            调试信息
+            </summary>
+            <param name="source">source</param>
+            <param name="message">message</param>
+            <param name="exception">ex</param>
+        </member>
+        <member name="M:PLMSide.Log.ILoggerHelper.Info(System.Object,System.Object,System.Exception)">
+            <summary>
+            关键信息
+            </summary>
+            <param name="source">source</param>
+            <param name="message">message</param>
+            <param name="exception">ex</param>
+        </member>
+        <member name="M:PLMSide.Log.ILoggerHelper.Info(System.Type,System.Object,System.Exception)">
+            <summary>
+            关键信息
+            </summary>
+            <param name="source">source</param>
+            <param name="message">message</param>
+            <param name="exception">ex</param>
+        </member>
+        <member name="M:PLMSide.Log.ILoggerHelper.Warn(System.Object,System.Object,System.Exception)">
+            <summary>
+            警告信息
+            </summary>
+            <param name="source">source</param>
+            <param name="message">message</param>
+            <param name="exception">ex</param>
+        </member>
+        <member name="M:PLMSide.Log.ILoggerHelper.Warn(System.Type,System.Object,System.Exception)">
+            <summary>
+            警告信息
+            </summary>
+            <param name="source">source</param>
+            <param name="message">message</param>
+            <param name="exception">ex</param>
+        </member>
+        <member name="M:PLMSide.Log.ILoggerHelper.Error(System.Object,System.Object,System.Exception)">
+            <summary>
+            错误信息
+            </summary>
+            <param name="source">source</param>
+            <param name="message">message</param>
+            <param name="exception">ex</param>
+        </member>
+        <member name="M:PLMSide.Log.ILoggerHelper.Error(System.Type,System.Object,System.Exception)">
+            <summary>
+            错误信息
+            </summary>
+            <param name="source">source</param>
+            <param name="message">message</param>
+            <param name="exception">ex</param>
+        </member>
+        <member name="M:PLMSide.Log.ILoggerHelper.Fatal(System.Object,System.Object,System.Exception)">
+            <summary>
+            失败信息
+            </summary>
+            <param name="source">source</param>
+            <param name="message">message</param>
+            <param name="exception">ex</param>
+        </member>
+        <member name="M:PLMSide.Log.ILoggerHelper.Fatal(System.Type,System.Object,System.Exception)">
+            <summary>
+            失败信息
+            </summary>
+            <param name="source">source</param>
+            <param name="message">message</param>
+            <param name="exception">ex</param>
+        </member>
+        <member name="T:PLMSide.Log.LogHelper">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PLMSide.Log.LogHelper.GetLogger(System.Type)">
+            <summary>
+            获取记录器
+            </summary>
+            <param name="source">soruce</param>
+            <returns></returns>
+        </member>
+        <member name="M:PLMSide.Log.LogHelper.Debug(System.Object,System.String)">
+            <summary>
+            调试信息
+            </summary>
+            <param name="source">source</param>
+            <param name="message">message</param>
+        </member>
+        <member name="M:PLMSide.Log.LogHelper.Debug(System.Object,System.String,System.Object[])">
+            <summary>
+            调试信息
+            </summary>
+            <param name="source">source</param>
+            <param name="message">message</param>
+            <param name="ps">ps</param>
+        </member>
+        <member name="M:PLMSide.Log.LogHelper.Debug(System.Type,System.String)">
+            <summary>
+            调试信息
+            </summary>
+            <param name="source">source</param>
+            <param name="message">message</param>
+        </member>
+        <member name="M:PLMSide.Log.LogHelper.Info(System.Object,System.Object)">
+            <summary>
+            关键信息
+            </summary>
+            <param name="source">source</param>
+            <param name="message">message</param>
+        </member>
+        <member name="M:PLMSide.Log.LogHelper.Info(System.Type,System.Object)">
+            <summary>
+            关键信息
+            </summary>
+            <param name="source">source</param>
+            <param name="message">message</param>
+        </member>
+        <member name="M:PLMSide.Log.LogHelper.Warn(System.Object,System.Object)">
+            <summary>
+            警告信息
+            </summary>
+            <param name="source">source</param>
+            <param name="message">message</param>
+        </member>
+        <member name="M:PLMSide.Log.LogHelper.Warn(System.Type,System.Object)">
+            <summary>
+            警告信息
+            </summary>
+            <param name="source">source</param>
+            <param name="message">message</param>
+        </member>
+        <member name="M:PLMSide.Log.LogHelper.Error(System.Object,System.Object)">
+            <summary>
+            错误信息
+            </summary>
+            <param name="source">source</param>
+            <param name="message">message</param>
+        </member>
+        <member name="M:PLMSide.Log.LogHelper.Error(System.Type,System.Object)">
+            <summary>
+            错误信息
+            </summary>
+            <param name="source">source</param>
+            <param name="message">message</param>
+        </member>
+        <member name="M:PLMSide.Log.LogHelper.Fatal(System.Object,System.Object)">
+            <summary>
+            失败信息
+            </summary>
+            <param name="source">source</param>
+            <param name="message">message</param>
+        </member>
+        <member name="M:PLMSide.Log.LogHelper.Fatal(System.Type,System.Object)">
+            <summary>
+            失败信息
+            </summary>
+            <param name="source">source</param>
+            <param name="message">message</param>
+        </member>
+        <member name="M:PLMSide.Log.LogHelper.Debug(System.Object,System.Object,System.Exception)">
+            <summary>
+            调试信息
+            </summary>
+            <param name="source">source</param>
+            <param name="message">message</param>
+            <param name="exception">ex</param>
+        </member>
+        <member name="M:PLMSide.Log.LogHelper.Debug(System.Type,System.Object,System.Exception)">
+            <summary>
+            调试信息
+            </summary>
+            <param name="source">source</param>
+            <param name="message">message</param>
+            <param name="exception">ex</param>
+        </member>
+        <member name="M:PLMSide.Log.LogHelper.Info(System.Object,System.Object,System.Exception)">
+            <summary>
+            关键信息
+            </summary>
+            <param name="source">source</param>
+            <param name="message">message</param>
+            <param name="exception">ex</param>
+        </member>
+        <member name="M:PLMSide.Log.LogHelper.Info(System.Type,System.Object,System.Exception)">
+            <summary>
+            关键信息
+            </summary>
+            <param name="source">source</param>
+            <param name="message">message</param>
+            <param name="exception">ex</param>
+        </member>
+        <member name="M:PLMSide.Log.LogHelper.Warn(System.Object,System.Object,System.Exception)">
+            <summary>
+            警告信息
+            </summary>
+            <param name="source">source</param>
+            <param name="message">message</param>
+            <param name="exception">ex</param>
+        </member>
+        <member name="M:PLMSide.Log.LogHelper.Warn(System.Type,System.Object,System.Exception)">
+            <summary>
+            警告信息
+            </summary>
+            <param name="source">source</param>
+            <param name="message">message</param>
+            <param name="exception">ex</param>
+        </member>
+        <member name="M:PLMSide.Log.LogHelper.Error(System.Object,System.Object,System.Exception)">
+            <summary>
+            错误信息
+            </summary>
+            <param name="source">source</param>
+            <param name="message">message</param>
+            <param name="exception">ex</param>
+        </member>
+        <member name="M:PLMSide.Log.LogHelper.Error(System.Type,System.Object,System.Exception)">
+            <summary>
+            错误信息
+            </summary>
+            <param name="source">source</param>
+            <param name="message">message</param>
+            <param name="exception">ex</param>
+        </member>
+        <member name="M:PLMSide.Log.LogHelper.Fatal(System.Object,System.Object,System.Exception)">
+            <summary>
+            失败信息
+            </summary>
+            <param name="source">source</param>
+            <param name="message">message</param>
+            <param name="exception">ex</param>
+        </member>
+        <member name="M:PLMSide.Log.LogHelper.Fatal(System.Type,System.Object,System.Exception)">
+            <summary>
+            失败信息
+            </summary>
+            <param name="source">source</param>
+            <param name="message">message</param>
+            <param name="exception">ex</param>
+        </member>
+        <member name="M:PLMSide.RuntimeHelper.GetAllAssemblies">
+            <summary>
+            获取项目程序集，排除所有的系统程序集(Microsoft.***、System.***等)、Nuget下载包
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PLMSide.RuntimeHelper.GetTypesByAssembly(System.String)">
+            <summary>
+            根据AssemblyName获取所有的类
+            </summary>
+            <param name="assemblyName"></param>
+            <returns></returns>
+        </member>
+        <member name="P:PLMSide.Startup.repository">
+            <summary>
+            log4net 仓储库
+            </summary>
+        </member>
+    </members>
+</doc>

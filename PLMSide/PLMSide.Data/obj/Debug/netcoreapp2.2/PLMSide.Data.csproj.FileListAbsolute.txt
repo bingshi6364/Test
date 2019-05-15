@@ -1,0 +1,12 @@
+D:\GitCode\ss\plm-api\PLMSide\PLMSide.Data\bin\Debug\netcoreapp2.2\PLMSide.Data.deps.json
+D:\GitCode\ss\plm-api\PLMSide\PLMSide.Data\bin\Debug\netcoreapp2.2\PLMSide.Data.dll
+D:\GitCode\ss\plm-api\PLMSide\PLMSide.Data\bin\Debug\netcoreapp2.2\PLMSide.Data.pdb
+D:\GitCode\ss\plm-api\PLMSide\PLMSide.Data\bin\Debug\netcoreapp2.2\PLMSide.Common.dll
+D:\GitCode\ss\plm-api\PLMSide\PLMSide.Data\bin\Debug\netcoreapp2.2\PLMSide.Common.pdb
+D:\GitCode\ss\plm-api\PLMSide\PLMSide.Data\obj\Debug\netcoreapp2.2\PLMSide.Data.csprojAssemblyReference.cache
+D:\GitCode\ss\plm-api\PLMSide\PLMSide.Data\obj\Debug\netcoreapp2.2\PLMSide.Data.csproj.CoreCompileInputs.cache
+D:\GitCode\ss\plm-api\PLMSide\PLMSide.Data\obj\Debug\netcoreapp2.2\PLMSide.Data.AssemblyInfoInputs.cache
+D:\GitCode\ss\plm-api\PLMSide\PLMSide.Data\obj\Debug\netcoreapp2.2\PLMSide.Data.AssemblyInfo.cs
+D:\GitCode\ss\plm-api\PLMSide\PLMSide.Data\obj\Debug\netcoreapp2.2\PLMSide.Data.csproj.CopyComplete
+D:\GitCode\ss\plm-api\PLMSide\PLMSide.Data\obj\Debug\netcoreapp2.2\PLMSide.Data.dll
+D:\GitCode\ss\plm-api\PLMSide\PLMSide.Data\obj\Debug\netcoreapp2.2\PLMSide.Data.pdb
