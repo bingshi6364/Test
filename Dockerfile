@@ -19,8 +19,9 @@ RUN dotnet build -c Release -o /app
 
 WORKDIR /src/PLMSide
 RUN dotnet build -c Release -o /app
-WORKDIR /src
+
 FROM build AS publish
+WORKDIR /src
 RUN dotnet publish -c Release -o /app
 
 FROM base AS final
