@@ -1,8 +1,8 @@
-FROM microsoft/dotnet:2.2-sdk AS base
+FROM microsoft/dotnet:2.2-runtime AS base
 WORKDIR /app
 EXPOSE 5000
 
-FROM microsoft/aspnetcore-build:2.2 AS build
+FROM microsoft/dotnet:2.2-sdk AS build
 WORKDIR /src
 COPY PLMSide.sln ./
 COPY PLMSide.Data/*.csproj ./PLMSide.Data/
