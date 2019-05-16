@@ -1,16 +1,29 @@
-FROM microsoft/dotnet:2.2-sdk AS build
-COPY PLMSide.sln ./
-COPY PLMSide.Data/*.csproj ./app/PLMSide.Data/
-COPY PLMSide.Common/*.csproj ./app/PLMSide.Common/
-COPY PLMSide/*.csproj ./app/PLMSide/
-WORKDIR /app/PLMSide
-RUN dotnet restore
-
-COPY PLMSide/. ./
-RUN dotnet publish -o out /p:PublishWithAspNetCoreTargetManifest="false"
-
-FROM microsoft/dotnet:2.2-runtime AS runtime
-ENV ASPNETCORE_URLS http://+:5000
+FROM microsoft/aspnetcore:2.2 AS base
 WORKDIR /app
-COPY --from=build /app/PLMSide/out ./
+EXPOSE 5000
+
+FROM microsoft/aspnetcore-build:2.2 AS build
+WORKDIR /src
+COPY PLMSide.sln ./
+COPY PLMSide.Data/*.csproj ./PLMSide.Data/
+COPY PLMSide.Common/*.csproj ./PLMSide.Common/
+COPY PLMSide/*.csproj ./PLMSide/
+
+RUN dotnet restore
+COPY . .
+WORKDIR /src/ PLMSide.Data
+RUN dotnet build -c Release -o /app
+
+WORKDIR /src/ PLMSide.Common
+RUN dotnet build -c Release -o /app
+
+WORKDIR /src/PLMSide
+RUN dotnet build -c Release -o /app
+
+FROM build AS publish
+RUN dotnet publish -c Release -o /app
+
+FROM base AS final
+WORKDIR /app
+COPY --from=publish /app .
 ENTRYPOINT ["dotnet", "PLMSide.dll"]
